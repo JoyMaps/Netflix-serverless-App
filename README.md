@@ -20,7 +20,7 @@ The system is built around a REST API and event-driven backend:
 - DynamoDB (NoSQL database)
 - SQS (event queue)
 
-## 📁 Project Structure
+```markdown
 ## 📁 Project Structure
 netflix-serverless-project/
 │
@@ -72,6 +72,7 @@ netflix-serverless-project/
 ├── architecture.png
 ├── architecture.drawio
 └── decisions.md
+```
 
 ## ⚙️ How to Run
 
