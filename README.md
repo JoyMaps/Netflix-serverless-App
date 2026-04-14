@@ -25,53 +25,52 @@ netflix-serverless-project/
 │
 ├── README.md
 ├── .gitignore
-├── docker-compose.yml                # Optional: LocalStack setup
+├── docker-compose.yml # Optional: LocalStack setup
 │
-├── terraform/                        # Infrastructure as Code (IaC)
-│   ├── provider.tf                   # AWS provider (LocalStack config)
-│   ├── dynamodb.tf                   # DynamoDB table definitions
-│   ├── s3.tf                         # S3 bucket configuration
-│   ├── sqs.tf                        # SQS queue setup
-│   ├── iam.tf                        # IAM roles and policies
-│   ├── apigateway.tf                 # API Gateway configuration (simulated)
-│   ├── variables.tf                  # Input variables
-│   └── outputs.tf                    # Output values
+├── terraform/ # Infrastructure as Code (IaC)
+│ ├── provider.tf # AWS provider (LocalStack config)
+│ ├── dynamodb.tf # DynamoDB table definitions
+│ ├── s3.tf # S3 bucket configuration
+│ ├── sqs.tf # SQS queue setup
+│ ├── iam.tf # IAM roles and policies
+│ ├── apigateway.tf # API Gateway configuration (simulated)
+│ ├── variables.tf # Input variables
+│ └── outputs.tf # Output values
 │
-├── lambdas/                          # Simulated Lambda functions (Node.js)
-│   ├── server.js                     # Express server (API Gateway + Lambda simulation)
-│   │
-│   ├── getMovies/
-│   │   └── index.js                  # Fetch movies (GET /movies)
-│   │
-│   ├── addMovie/
-│   │   └── index.js                  # Add movie (POST /movies)
-│   │
-│   ├── watchMovie/
-│   │   └── index.js                  # Send watch event (POST /watch)
-│   │
-│   ├── processRecommendation/
-│   │   └── index.js                  # Async processing (simulated SQS consumer)
-│   │
-│   └── shared/                       # Shared utilities (optional)
-│       └── utils.js
+├── lambdas/ # Simulated Lambda functions (Node.js)
+│ ├── server.js # Express server (API Gateway + Lambda simulation)
+│ │
+│ ├── getMovies/
+│ │ └── index.js # Fetch movies (GET /movies)
+│ │
+│ ├── addMovie/
+│ │ └── index.js # Add movie (POST /movies)
+│ │
+│ ├── watchMovie/
+│ │ └── index.js # Send watch event (POST /watch)
+│ │
+│ ├── processRecommendation/
+│ │ └── index.js # Async processing (SQS simulation)
+│ │
+│ └── shared/
+│ └── utils.js
 │
-├── build/                            # (Optional) Lambda zip artifacts
-│   └── *.zip
+├── build/
+│ └── *.zip
 │
-├── scripts/                          # Automation scripts (optional but professional)
-│   ├── setup.sh                      # Environment setup
-│   ├── deploy.sh                     # Terraform deployment
-│   ├── zip-lambdas.sh                # Package lambdas
-│   └── test-api.sh                   # API testing scripts
+├── scripts/
+│ ├── setup.sh
+│ ├── deploy.sh
+│ ├── zip-lambdas.sh
+│ └── test-api.sh
 │
-├── tests/                            # API test definitions
-│   └── api-tests.http
+├── tests/
+│ └── api-tests.http
 │
-└── docs/                             # Documentation & diagrams
-    ├── architecture.png              # Architecture diagram (PNG)
-    ├── architecture.drawio          # Editable diagram (Draw.io)
-    └── decisions.md                  # Key engineering decisions
-
+└── docs/
+├── architecture.png
+├── architecture.drawio
+└── decisions.md
 
 ## ⚙️ How to Run
 
