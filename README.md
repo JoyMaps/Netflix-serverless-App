@@ -21,6 +21,7 @@ The system is built around a REST API and event-driven backend:
 - SQS (event queue)
 
 ## 📁 Project Structure
+## 📁 Project Structure
 netflix-serverless-project/
 │
 ├── README.md
