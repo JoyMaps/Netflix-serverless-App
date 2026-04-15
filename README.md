@@ -4,6 +4,9 @@
 This project simulates a production-grade serverless backend inspired by Netflix architecture patterns. It demonstrates how scalable, event-driven systems are built using Infrastructure as Code and cloud-native design principles.
 
 ## 🏗️ Architecture
+
+<img width="1536" height="1024" alt="Serverless architecture with AWS services diagram" src="https://github.com/user-attachments/assets/dac90c0c-7f3c-4fac-9344-e18a99955605" />
+
 The system is built around a REST API and event-driven backend:
 
 - API Layer (simulated API Gateway via Express)
